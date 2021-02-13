@@ -15,6 +15,7 @@
 
 :root {
   --accent-color: #f26f24;
+  --thoma-magenta: #d40e86;
   --fg-color: #eee;
   --bg-color: #111;
   --primary-font: 'Helvetica', sans-serif;
@@ -87,15 +88,21 @@ body {
   align-items: flex-end;
   width: 98vw;
   background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 64%, rgba(0,212,255,0) 100%);
+  background: linear-gradient(180deg, #111 64%, rgba(0,212,255,0) 100%);
 }
 
 .header__menu {
 
 }
+
 .back {
   font-size: 3rem;
   color: #eee;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .thoma-logo {
@@ -107,7 +114,7 @@ body {
   /* transform: scale(0.5); */
 }
 
-.thoma {
+.thoma-logo__thoma {
   font-family: var(--thoma-font);
   font-size: 3rem;
   color: var(--accent-color);
@@ -120,12 +127,26 @@ body {
   text-shadow: 1px 1px 3px var(--accent-color);
 }
 
-.foundation {
+.thoma-logo__foundation {
   font-family: var(--foundation-font);
   color: #666366;
   font-size: 1.0175rem;
-  margin: -.5em;;
   padding: 0;
+}
+
+.av-logo {
+  font-family: 'Space Mono', monospace;
+  font-size: 3rem;
+  margin-left: .5em;
+  color: var(--thoma-magenta);
+  text-shadow: 1px 1px 2px var(--thoma-magenta);
+}
+
+.neon {
+  -webkit-text-fill-color: #000;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--thoma-magenta);
+  text-shadow: 1px 1px 3px var(--thoma-magenta);
 }
 
 .main {
@@ -146,6 +167,15 @@ body {
 .space {
   width: 100%;
   padding: 10rem 0;
+}
+.exhibition-title {
+  font-size: 2.5rem;
+  margin-bottom: .5em;
+}
+
+
+.left-entry__text {
+  font-size: 1.25rem;
 }
 
 .entry {
