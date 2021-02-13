@@ -1,0 +1,159 @@
+@font-face {
+  font-family: Helvetica;
+  src: url(fonts/helvetica/HelveticaLTS.ttc);
+}
+
+@font-face {
+  font-family: Herm-Bold;
+  src: url(fonts/hurme_geometric/HurmeGeometricSans4_Bold.otf)
+}
+
+@font-face {
+  font-family: Museo-500;
+  src: url(fonts/museo/MuseoSans_500.otf)
+}
+
+:root {
+  --accent-color: #f26f24;
+  --fg-color: #eee;
+  --bg-color: #111;
+  --primary-font: 'Helvetica', sans-serif;
+  --thoma-font: 'Herm-Bold';
+  --foundation-font: 'Museo-500';
+}
+
+/*
+  Herm Geometric Bold
+  Helvetica Regular
+  Helvetic Italic
+  Helvetica Bold
+  Public Sans Black
+  Museo 500
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+html {
+  font-family: var(--primary-font);
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--fg-color);
+  overflow-y: hidden;
+}
+
+.container {
+  overflow-y: hidden;
+}
+
+.text-content {
+  margin: 1em 0;
+  font-size: 1.5rem;
+  padding-right: 4em;
+}
+
+.header {
+  padding: 1em;
+  padding-bottom: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 98vw;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 64%, rgba(0,212,255,0) 100%);
+}
+
+.header__menu {
+
+}
+.back {
+  font-size: 3rem;
+  color: #eee;
+}
+
+.thoma-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: .325em;
+  /* transform: scale(0.5); */
+}
+
+.thoma {
+  font-family: var(--thoma-font);
+  font-size: 3rem;
+  color: var(--accent-color);
+  margin: 0;
+  padding: 0;
+  
+  -webkit-text-fill-color: #000;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--accent-color);
+  text-shadow: 1px 1px 3px var(--accent-color);
+}
+
+.foundation {
+  font-family: var(--foundation-font);
+  color: #666366;
+  font-size: 1.0175rem;
+  margin: -.5em;;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.section {
+  max-height: 90vh;
+  width: 50vw;
+  margin: 1em;
+  overflow-y: scroll;
+  /* outline: 2px solid #666; */
+}
+
+.space {
+  width: 100%;
+  padding: 10rem 0;
+}
+
+.entry {
+  margin: 10em 0;
+  padding-right: 4em;
+}
+
+.vimeo-embed {
+  width: 100%;
+}
+
