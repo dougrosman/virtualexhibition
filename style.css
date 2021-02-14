@@ -26,8 +26,9 @@
   --thoma-orange: #f26f24;
   --thoma-magenta: #d40e86;
   --foundation-gray: #666366;
-  --fg-white: #eee;
-  --bg-black: #111;
+  --fg: #f6f6f6;
+  --bg: #080808;
+  --bga: #08080800;
   --primary-font: 'Helvetica', sans-serif;
   --thoma-font: 'Herm-Bold';
   --foundation-font: 'Museo-500';
@@ -43,7 +44,7 @@
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--bg-black);
+  background: var(--bg);
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -60,8 +61,8 @@ html {
 }
 
 body {
-  background: var(--bg-black);
-  color: var(--fg-white);
+  background: var(--bg);
+  color: var(--fg);
 }
 
 p {
@@ -81,9 +82,20 @@ p {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  background: var(--bg-black);
-  background: linear-gradient(180deg, var(--bg-black) 78%, #1110 100%);
+  align-items: center;
+  background: var(--bg);
+  background: linear-gradient(180deg, var(--bg) 78%, var(--bga) 100%);
+}
+
+.darkmode {
+  width: 2.25em;
+  height: 2.25em;
+  transition: transform .5s;
+}
+
+.darkmode:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .main {
@@ -127,13 +139,13 @@ p {
   content: "\\";
   position: absolute;
   transform: rotateZ(0deg);
-  transform: translate(-.8em, 0) rotateZ(-25deg);
+  transform: translate(-.775em, 0) rotateZ(-25deg);
 }
 
 .down-arrow::after {
   content: "/";
   position: absolute;
-  transform: translate(-0.25em, 0) rotateZ(25deg);
+  transform: translate(-0.275em, 0) rotateZ(25deg);
 }
 
 .category-menu {
@@ -148,7 +160,7 @@ p {
 
 .category-menu__dropdown a {
   display: block;
-  color: var(--fg-white);
+  color: var(--fg);
   text-decoration: none;
   outline: 1px solid var(--foundation-gray);
   padding: 1em;
@@ -156,6 +168,7 @@ p {
 }
 .category-menu__dropdown a:hover {
   background: var(--foundation-gray);
+  color: var(--bg);
 }
 
 .logos {
@@ -175,14 +188,9 @@ p {
 .thoma-logo__thoma {
   font-family: var(--thoma-font);
   font-size: 3rem;
-  color: var(--accent-color);
+  color: var(--thoma-orange);
   margin: 0;
   padding: 0;
-  
-  -webkit-text-fill-color: #000;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--accent-color);
-  text-shadow: 1px 1px 3px var(--accent-color);
 }
 
 .thoma-logo__foundation {
@@ -253,6 +261,8 @@ p {
   text-shadow: 1px 1px 3px var(--thoma-orange);
 }
 
+
+
 @media only screen and (max-width: 699px) {
   
   html {
@@ -262,8 +272,8 @@ p {
   .header {
     padding-top: .5em;
     padding-bottom: 1em;
-    background: var(--bg-black);
-    background: linear-gradient(180deg, var(--bg-black) 94%, #1110 100%);
+    background: var(--bg);
+    background: linear-gradient(180deg, var(--bg) 94%, #1110 100%);
   }
   
   .section {
@@ -312,5 +322,18 @@ p {
   .orange {
     -webkit-text-stroke-color: var(--thoma-orange);
     text-shadow: 1px 1px 2px var(--thoma-orange);
+  }
+
+  .down-arrow::before {
+    content: "\\";
+    position: absolute;
+    transform: rotateZ(0deg);
+    transform: translate(-.73em, 0) rotateZ(-25deg);
+  }
+  
+  .down-arrow::after {
+    content: "/";
+    position: absolute;
+    transform: translate(-0.32em, 0) rotateZ(25deg);
   }
 }

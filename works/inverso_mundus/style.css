@@ -26,8 +26,8 @@
   --thoma-orange: #f26f24;
   --thoma-magenta: #d40e86;
   --foundation-gray: #666366;
-  --fg-white: #eee;
-  --bg-black: #111;
+  --fg: #f6f6f6;
+  --bg: #080808;
   --primary-font: 'Helvetica', sans-serif;
   --thoma-font: 'Herm-Bold';
   --foundation-font: 'Museo-500';
@@ -59,8 +59,8 @@ html {
 }
 
 body {
-  background: var(--bg-black);
-  color: var(--fg-white);
+  background: var(--bg);
+  color: var(--fg);
 }
 
 .header {
@@ -69,7 +69,21 @@ body {
   top: 0;
   z-index: 2;
   width: 100%;
-  background: var(--bg-black);
+  background: var(--bg);
+}
+
+.darkmode {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  width: 2em;
+  height: 2em;
+  transition: transform .5s;
+}
+
+.darkmode:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .main {
