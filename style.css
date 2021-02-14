@@ -88,9 +88,10 @@ p {
 }
 
 .darkmode {
-  width: 2.25em;
-  height: 2.25em;
+  width: 1.5em;
+  height: 1.5em;
   transition: transform .325s;
+  margin-top: -2em;
 }
 
 .darkmode:hover {
