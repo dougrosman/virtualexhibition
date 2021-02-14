@@ -9,53 +9,62 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="libs/jquery-3.5.1.min.js"></script>
   
   <title>Virtual Exhibition</title>
 </head>
 <body>
   <div class="container">
     <header class="header">
-      <div class="logo">
+      <div class="logos">
         <div class="thoma-logo">
-          <div class="thoma-logo__thoma">thoma</div>
+          <div class="thoma-logo__thoma neon orange">thoma</div>
           <div class="thoma-logo__foundation">FOUNDATION</div>
         </div>
-        <div class="av-logo">A<span class="neon">/</span>V</div>
+        <div class="av-logo">A<span class="neon pink">/</span>V</div>
       </div>
       
-      <nav class="header__menu">
-        <a href="." class="back">BACK</a>
-      </nav>
+      <!-- <nav class="header__menu">
+        <a href="." class="back-button">[DARK]</a>
+      </nav> -->
       
     </header>
     <main class="main">
       <div class="section left">
         <div class="space"></div>
+        <!-- <input class="search" type="text" value="search"> -->
+        
         <div class="left-entry">
           <h3 class="exhibition-title">Exhibition Title</h3>
           <p class="left-entry__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio corrupti aut minima, neque nobis eum at laudantium eaque praesentium, excepturi inventore aliquam assumenda esse? Accusamus culpa corrupti eius distinctio itaque iusto ratione earum sequi laborum ab praesentium magnam quod, aperiam modi laudantium nostrum a deserunt dolore ipsam sint sunt, porro error rerum quidem! Officiis vel optio doloribus laboriosam distinctio hic!</p>
+          
+
+          <p class="left-entry__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio corrupti aut minima, neque nobis eum at laudantium eaque praesentium, excepturi inventore aliquam assumenda esse? Accusamus culpa corrupti eius distinctio itaque iusto ratione earum sequi laborum ab praesentium magnam quod, aperiam modi laudantium nostrum a deserunt dolore ipsam sint sunt, porro error rerum quidem! Officiis vel optio doloribus laboriosam distinctio hic!</p>
+
+          <div class="category-menu">
+            <div class="menu-button">Program</div>
+            <nav class="category-menu__dropdown">
+              <a href="#">Artist</a>
+              <a href="#">Category</a>
+              <a href="#">Whatever</a>
+              <a href="#">Title</a>
+            </nav>
+          </div>
         </div>
       </div>
       <div class="section right">
         <div class="entry">
-          <a href="https://vimeo.com/135175707" class="video-link" target="_blank"><img src="images/thumbs/aesf_thumb.jpg" alt="aes+f thumbnail" class="vimeo-embed"></a>
+          <a href="https://vimeo.com/135175707" target="_blank"><img src="images/thumbs/aesf_thumb.jpg" alt="aes+f thumbnail" class="entry__image"></a>
           <div class="entry__description">
-            <h4 class="entry__title">INVERSO MUNDUS</h4>
-            <h5 class="entry__author">AES+F</h5>
+            <h4 class="entry__author">AES+F</h4>
+            <h5 class="entry__title">INVERSO MUNDUS</h5>
             <p class="entry__date">2018</p>
             <p class="entry__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci facere natus ratione repudiandae ipsam, sint placeat dolores quasi eius atque nulla ab consequatur quae qui ducimus. Corporis, amet molestias. Soluta earum nam eius obcaecati quos, dicta perspiciatis optio ratione dignissimos ipsa expedita assumenda consequatur. Inventore necessitatibus tenetur iste neque consectetur.</p>
           </div>
-          <div class="entry">
-            <a href="https://vimeo.com/135175707" class="video-link" target="_blank"><img src="images/thumbs/aesf_thumb.jpg" alt="aes+f thumbnail" class="vimeo-embed"></a>
-            <div class="entry__description">
-              <h4 class="entry__title">INVERSO MUNDUS</h4>
-              <h5 class="entry__author">AES+F</h5>
-              <p class="entry__date">2018</p>
-              <p class="entry__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci facere natus ratione repudiandae ipsam, sint placeat dolores quasi eius atque nulla ab consequatur quae qui ducimus. Corporis, amet molestias. Soluta earum nam eius obcaecati quos, dicta perspiciatis optio ratione dignissimos ipsa expedita assumenda consequatur. Inventore necessitatibus tenetur iste neque consectetur.</p>
-            </div>
-        </div>
       </div>
     </main>
   </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
