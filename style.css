@@ -114,11 +114,11 @@ p {
 }
 
 .section-left {
-  flex: 1 1 40ch;
+  flex: 1 1 42ch;
 }
 
 .section-right {
-  flex: 1 1 30ch;
+  flex: 1 1 28ch;
   padding: 0 2em;
 }
 
@@ -209,7 +209,7 @@ p {
 }
 
 .exhibition-title {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 5vmin, 2.5rem);
   margin-top: 4em;
   margin-bottom: .5em;
   letter-spacing: .05em;
@@ -283,6 +283,15 @@ p {
     margin: 1em 0;
   }
 
+  .section-left {
+    flex: 1 0 100%;
+  }
+  
+  .section-right {
+    flex: 1 0 100%;
+    padding: 0 1em;
+  }
+
   .thoma-logo {
     letter-spacing: .25em;
   }
@@ -302,6 +311,7 @@ p {
   }
 
   .exhibition-title {
+    font-size: clamp(1.75rem, 5vmin, 2.25rem);
     margin-top: 2.5em;
   }
 
