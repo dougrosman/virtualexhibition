@@ -185,9 +185,10 @@ body {
 }
 
 .section {
+  min-height: 90vh;
   max-height: 96vh;
   flex: 1 1 50%;
-  padding: 0 5em;
+  padding: 1em 5em;
   overflow-y: scroll;
 }
 
@@ -213,6 +214,18 @@ body {
 
 .entry__image {
   width: 100%;
+}
+.entry__artist {
+  margin: .5em 0;
+}
+
+.entry__title {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.entry__date {
+  font-style: normal;
 }
 
 
