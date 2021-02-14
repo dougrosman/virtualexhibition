@@ -1,7 +1,18 @@
 @font-face {
   font-family: Helvetica;
-  src: url(../../fonts/helvetica/Helvetica.ttc);
+  src: url(../../fonts/helvetica/HelveticaLTStd-Roman.otf);
 }
+
+@font-face {
+  font-family: Helvetica-Light;
+  src: url(../../fonts/helvetica/HelveticaLTStd-Light.otf);
+}
+
+@font-face {
+  font-family: Helvetica-Bold;
+  src: url(../../fonts/helvetica/HelveticaLTStd-BlkObl.otf);
+}
+
 @font-face {
   font-family: Herm-Bold;
   src: url(../../fonts/hurme_geometric/HurmeGeometricSans4_Bold.otf)
@@ -17,7 +28,7 @@
   --foundation-gray: #666366;
   --fg-white: #eee;
   --bg-black: #111;
-  --primary-font: 'Helvetica', sans-serif;
+  --primary-font: 'Helvetica';
   --thoma-font: 'Herm-Bold';
   --foundation-font: 'Museo-500';
 }
@@ -52,7 +63,7 @@ body {
 }
 
 .header {
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .main {
@@ -71,7 +82,7 @@ body {
 .embed-container { 
   position: relative; 
   padding-bottom: 56.25%; 
-  padding-top: 30px; 
+  padding-top: 0px; 
   height: 0; 
   overflow: hidden; 
   max-width: 100%; 
@@ -112,5 +123,5 @@ body {
 
 .work__description {
   max-width: 50ch;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
