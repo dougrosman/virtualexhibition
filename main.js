@@ -1,5 +1,5 @@
 $('.menu-button').click(function(){
   $('.category-menu__dropdown').toggle("scale");
-
-  console.log("ok")
+  $(".section-left").animate({ scrollTop: $('.section-left').height() }, 1000);
+  return false;
 })
